@@ -80,7 +80,6 @@ $('[data-toggle="slide-collapse"]').on('click', function() {
         if ($('.header_area').length) {
             $(window).scroll(function () {
                 let scroll = $(window).scrollTop();
-                console.log(scroll);
                 if (scroll >= nav_offset_top) {
                     $('.header_area .main-menu').addClass('navbar_fixed');
                 } else {

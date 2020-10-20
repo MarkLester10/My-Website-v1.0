@@ -1,51 +1,50 @@
-@media (max-width: 991.98px) {
-    .header_area .main-menu .navbar .navbar-collapse {
-    position: fixed;
-    top: 5rem;
-    left: 0;
-    z-index: 10000;
-    width: 300px; /*example + never use min-width with this solution */
-    height: 100%;
-    background-color: white;
-    padding: 0 1.5rem;
-}
-}
 
 
-/* if the viewport is equal to 340px or less than that */ 
-@media only screen and (max-width: 340px){
+/* if the viewport is equal to 360px or less than that */ 
+@media only screen and (max-width: 360px){
     .header_area .main-menu .navbar,
-    .header_area .main-menu .navbar .navbar-brand,
-    .site-main .subscribe-us-area .subscribe .subscribe-title,
-    .site-main .subscribe-us-area .subscribe .subscribe-title p, h4,
+    .site-main .contact-area .contact .contact-title,
+    .site-main .contact-area .contact .contact-title p, h4,
     .site-main .services-area,
-    .site-main .subscribe-us-area .subscribe
+    .site-main .contact-area .contact
     {
         padding: 2%;
-        margin: 0%;
+        margin: -2%;
     }
 
-    .site-main .site-banner .site-title h1{
-        font-size: 41px;
+    .site-main .site-banner .site-title h4{
+        font-size: 18px;
     }
 
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 15rem    !important;
+    .site-main .contact-area .contact {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+}
+
+/* if the viewport is equal to 480px or less than that */ 
+@media screen and (max-width: 480px){
+
+
+    .site-main > .services-area .container{
+        min-width: 100% !important;
     }
 
     .site-main > .services-area .services{
-        width: 13rem;
+        width: 100%;
+        margin-bottom: 5rem;
     }
+
 
 }
 
 
-/* if the viewport is equal to 340px or less than that */ 
+/* if the viewport is equal to 792px or less than that */ 
 @media only screen and (max-width: 792px){
 
     .site-main .about-area .about-title h2 > span{
         font-size: 31px;
-        letter-spacing: 10px;
+        letter-spacing: 5px;
     }
 
     .site-main .brand-area .experience-area .years-area{
@@ -70,11 +69,56 @@
         padding: 0%;
     }
 
-    .site-main .subscribe-us-area .subscribe form .input-textbox input{
-        width: 20rem;
+    .site-main .contact-area .contact form .input-textbox input{
         margin: 5%;
     }
 }
+
+@media (max-width: 991.98px) {
+    .header_area .main-menu .navbar .navbar-collapse {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    z-index: 10000;
+    width: 300px; /*example + never use min-width with this solution */
+    height: 100%;
+    background-color: white;
+    padding: 0 1.5rem;
+}
+
+    .site-main .site-banner .site-title h3{
+        padding-top: 25%;
+    }
+
+    .site-main .site-banner .banner-image > img{
+        display: none;
+    }
+
+    .site-main .site-banner .carousel{
+        margin-top: 5rem;
+    }
+
+    /* about area */
+    .site-main .about-area .about-image > img{
+        display: none;
+    }
+
+    .site-main .about-area .about-title h2>span{
+        font: normal bold 40px/61px var(--roboto);
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+    
+    .site-main .about-area .about-title h2::after{
+        content: '';
+        height: 2px;
+        width: 15vw;
+        background: black;
+        display: inline-block;
+        transform: translateY(-10px);
+    }
+}
+
 
 
 
